@@ -1,0 +1,38 @@
+/* NAV */
+
+.nav-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+  
+nav,
+.nav-links {
+  display: flex;
+}
+  
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 13vh;
+}
+  
+.nav-links {
+  gap: 1.3rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+  
+  
+.logo {
+  display: flex;
+  font-size: 2rem;
+  gap: 1rem;
+}
+  
+.logo:hover {
+  cursor: default;
+}
+  

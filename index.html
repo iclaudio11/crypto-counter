@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Counter</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/counter.css">
+    <link rel="stylesheet" href="assets/css/crypto-container.css">
+</head>
+<body>
+    <nav class="nav-sticky">
+        <div class="logo">
+            <img
+            src="./assets/images/logo.png"
+            alt="My Github profile"
+            class="icon-logo"
+          />
+            <p>Crypto Counter</p>
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li>
+                <a href="https://linkedin.com/in/claudioiaculo" target="_blank" rel="noopener">
+                    <img
+                    src="./assets/images/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                  />
+                </a>   
+            </li>
+            <li>
+                <a href="https://github.com/iclaudio11" target="_blank" rel="noopener">
+                    <img
+                    src="./assets/images/github.png"
+                    alt="My Github profile"
+                    class="icon"
+                  />
+                  </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <div class="counter-container">
+        <p id="counter">0 ETH</p>
+        <div class="button-container">
+            <button onclick="changeCounter(+1)">+</button>
+            <button class="button-switch" onclick="switchCrypto()">Switch Crypto</button>
+            <button class="button-reset" onclick="resetCounter()">Reset</button>
+            <button onclick="changeCounter(-1)">-</button>
+            </div>
+        </div>
+        <div class="crypto-container">
+            <div>
+                <p class="title">My Crypto</p>
+                <div>
+                    <div class="crypto-icon-container-1">
+                        <img src="./assets/images/eth-icon.png" alt="" class="crypto-icon">
+                        <p class="crypto">Ethereum</p>  
+                    </div>
+                    <div class="crypto-value-container">
+                        <p>0 ETH</p>
+                        <p>Value: €0.00</p>
+                    </div>
+                    <div class="crypto-icon-container-2">
+                        <img src="./assets/images/btc-icon.png" alt="" class="crypto-icon">
+                        <p class="crypto">Bitcoin</p>
+                    </div>
+                    <div class="crypto-value-container">
+                        <p>0 BTC</p>
+                        <p>Value: €0.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
