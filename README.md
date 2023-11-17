@@ -16,6 +16,12 @@ The project is structured with the following files:
 - `js`: JavaScript code for counter management.
 - `index.html`: Contains the HTML structure of the web page.
 
+## Installation
+
+1. Clone the repository to your computer: `git clone https://github.com/iclaudio11/javascript-project.git`
+2. Navigate to the project directory.
+3. Open the `index.html` file in your browser.
+
 ## Usage
 
 1. Open the `index.html` file in your preferred browser.
