@@ -44,11 +44,6 @@ button:hover {
 }
 
 
-button:active {
-    background-color: #c4c4ff;    
-}
-
-
 .icon {
     cursor: pointer;
     height: 2.3rem;
