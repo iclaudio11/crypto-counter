@@ -5,11 +5,12 @@ let ethCounter = 0;
 let btcCounter = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
-    let buttons = document.querySelectorAll('button');
+    var buttons = document.querySelectorAll('.button-container button');
 
     buttons.forEach(function (button) {
-        button.addEventListener('touchstart', function (e) {
+        button.addEventListener('touchend', function (e) {
             e.preventDefault();
+
             function switchCrypto() {
                 let counterElement = document.getElementById("counter");
             
@@ -90,10 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             
             
-                    });
+        });
     });
 });
-
-
-
 
