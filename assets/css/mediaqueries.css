@@ -1,0 +1,16 @@
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 650px) {
+    .icon {
+        height: 1.9rem;
+    }
+    .icon-logo {
+        cursor: default;
+        height: 2.1rem; 
+    }
+    .logo {
+        display: flex;
+        font-size: 1.5rem;
+        gap: 1rem;
+    }
+}

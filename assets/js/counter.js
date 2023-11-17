@@ -4,7 +4,6 @@ let currentCrypto = "ETH";
 let ethCounter = 0;
 let btcCounter = 0;
 
-// Funzione chiamata quando si preme il pulsante "Switch Crypto"
 function switchCrypto() {
     let counterElement = document.getElementById("counter");
 
@@ -21,7 +20,6 @@ function switchCrypto() {
     updateMiniCounters();
 }
 
-// Funzione chiamata quando si preme uno dei pulsanti "+" o "-"
 function changeCounter(amount) {
     let counterElement = document.getElementById("counter");
 
@@ -39,7 +37,6 @@ function changeCounter(amount) {
     }
 }
 
-// Funzione chiamata quando si preme il pulsante "Reset"
 function resetCounter() {
     let counterElement = document.getElementById("counter");
 
@@ -54,7 +51,6 @@ function resetCounter() {
     updateMiniCounters();
 }
 
-// Funzione per aggiornare i mini-contatori
 function updateMiniCounters() {
     let ethMiniCounterElement = document.querySelector(".crypto-value-container:nth-child(2) p:first-child");
     let btcMiniCounterElement = document.querySelector(".crypto-value-container:nth-child(4) p:first-child");
@@ -63,7 +59,6 @@ function updateMiniCounters() {
     btcMiniCounterElement.innerText = btcCounter + " BTC";
 }
 
-// Funzione per aggiornare i mini-contatori e i valori in euro
 function updateMiniCounters() {
     let ethMiniCounterElement = document.querySelector(".crypto-value-container:nth-child(2) p:first-child");
     let btcMiniCounterElement = document.querySelector(".crypto-value-container:nth-child(4) p:first-child");
@@ -77,7 +72,6 @@ function updateMiniCounters() {
     btcValueElement.innerText = "Value: €" + calculateEuroValue(btcCounter, "BTC");
 }
 
-// Funzione per calcolare il valore in euro in base al numero di crypto e alla crypto passati
 function calculateEuroValue(cryptoAmount, cryptoType) {
     let ethExchangeRate = 1864.40;
     let btcExchangeRate = 33787.47;
