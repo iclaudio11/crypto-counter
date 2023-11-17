@@ -20,7 +20,6 @@ The project is structured with the following files:
 
 1. Clone the repository to your computer: `git clone https://github.com/iclaudio11/javascript-project.git`
 2. Navigate to the project directory.
-3. Open the `index.html` file in your browser.
 
 ## Usage
 
