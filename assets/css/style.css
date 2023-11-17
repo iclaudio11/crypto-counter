@@ -24,6 +24,7 @@ button {
     border-radius: 1.7rem;
     text-decoration: none;
     border: rgb(53, 53, 53) 0.1rem solid;
+    touch-action: manipulation;
 }
 
 .button-switch {
