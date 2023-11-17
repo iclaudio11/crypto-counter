@@ -4,6 +4,18 @@ let currentCrypto = "ETH";
 let ethCounter = 0;
 let btcCounter = 0;
 
+document.addEventListener('DOMContentLoaded', function () {
+    let buttons = document.querySelectorAll('button');
+
+    buttons.forEach(function (button) {
+        button.addEventListener('touchstart', function (e) {
+            e.preventDefault();
+            // Aggiungi il tuo codice per incrementare il contatore qui
+        });
+    });
+});
+
+
 function switchCrypto() {
     let counterElement = document.getElementById("counter");
 
