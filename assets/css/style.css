@@ -59,3 +59,11 @@ button:hover {
     cursor: default;
     height: 1.2rem; 
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: rgb(53, 53, 53);
+    font-size: 7px;
+    margin-top: 36px;
+}
