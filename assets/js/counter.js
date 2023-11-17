@@ -4,6 +4,19 @@ let currentCrypto = "ETH";
 let ethCounter = 0;
 let btcCounter = 0;
 
+document.addEventListener('touchstart', function(event) {
+    if (event.touches.length > 1) {
+        event.preventDefault();
+    }
+}, { passive: false });
+
+document.addEventListener('touchmove', function(event) {
+    if (event.scale !== 1) {
+        event.preventDefault();
+    }
+}, { passive: false });
+
+
 function switchCrypto() {
     let counterElement = document.getElementById("counter");
 
