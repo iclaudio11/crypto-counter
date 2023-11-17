@@ -84,14 +84,8 @@ function calculateEuroValue(cryptoAmount, cryptoType) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    var lastTouchEnd = 0;
-    document.documentElement.addEventListener('touchend', function (event) {
-    var now = Date.now();
-    if (now - lastTouchEnd <= 300) {
-    event.preventDefault();
+document.addEventListener('touchstart', function(e) {
+    if (e.touches.length > 1) {
+        e.preventDefault();
     }
-    lastTouchEnd = now;
-    }, false);
-});
-
+}, { passive: false });
